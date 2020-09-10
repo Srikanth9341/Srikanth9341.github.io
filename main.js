@@ -35,11 +35,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Appdata", function() { return Appdata; });
 // Appdata.ts
 class Appdata {
-    constructor(username2, Age2, EmailId2, designation) {
+    constructor(username2, Age2, EmailId2) {
         this.username2 = username2;
         this.Age2 = Age2;
         this.EmailId2 = EmailId2;
-        this.designation = designation;
     }
 }
 
@@ -70,7 +69,7 @@ __webpack_require__.r(__webpack_exports__);
 class AppComponent {
     constructor() {
         this.title = 'my-First-app';
-        this.data = new _AppData__WEBPACK_IMPORTED_MODULE_1__["Appdata"]('', '', '', '');
+        this.data = new _AppData__WEBPACK_IMPORTED_MODULE_1__["Appdata"]('', '', '');
     }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(); };
@@ -127,26 +126,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/__ivy_ngcc__/fesm2015/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./header/header.component */ "./src/app/header/header.component.ts");
-/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
-/* harmony import */ var _bus_ticket_booking_bus_ticket_booking_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./bus-ticket-booking/bus-ticket-booking.component */ "./src/app/bus-ticket-booking/bus-ticket-booking.component.ts");
-/* harmony import */ var _bus_ticket_booking_register_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./bus-ticket-booking/register.service */ "./src/app/bus-ticket-booking/register.service.ts");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
-/* harmony import */ var jw_angular_pagination__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! jw-angular-pagination */ "./node_modules/jw-angular-pagination/__ivy_ngcc__/fesm2015/jw-angular-pagination.js");
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/__ivy_ngcc__/fesm2015/animations.js");
-/* harmony import */ var _material_module_material_module_module__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./material-module/material-module.module */ "./src/app/material-module/material-module.module.ts");
-/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
-/* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./register/register.component */ "./src/app/register/register.component.ts");
-/* harmony import */ var _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./dashboard/dashboard.component */ "./src/app/dashboard/dashboard.component.ts");
-/* harmony import */ var _angular_fire__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/fire */ "./node_modules/@angular/fire/__ivy_ngcc__/fesm2015/angular-fire.js");
-/* harmony import */ var _angular_fire_database__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/fire/database */ "./node_modules/@angular/fire/__ivy_ngcc__/fesm2015/angular-fire-database.js");
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../environments/environment */ "./src/environments/environment.ts");
-/* harmony import */ var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/fire/firestore */ "./node_modules/@angular/fire/__ivy_ngcc__/fesm2015/angular-fire-firestore.js");
-/* harmony import */ var _service_crud_service__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./service/crud.service */ "./src/app/service/crud.service.ts");
-
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./header/header.component */ "./src/app/header/header.component.ts");
+/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
+/* harmony import */ var _bus_ticket_booking_bus_ticket_booking_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./bus-ticket-booking/bus-ticket-booking.component */ "./src/app/bus-ticket-booking/bus-ticket-booking.component.ts");
+/* harmony import */ var _bus_ticket_booking_register_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./bus-ticket-booking/register.service */ "./src/app/bus-ticket-booking/register.service.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
+/* harmony import */ var jw_angular_pagination__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! jw-angular-pagination */ "./node_modules/jw-angular-pagination/__ivy_ngcc__/fesm2015/jw-angular-pagination.js");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/__ivy_ngcc__/fesm2015/animations.js");
+/* harmony import */ var _material_module_material_module_module__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./material-module/material-module.module */ "./src/app/material-module/material-module.module.ts");
+/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
+/* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./register/register.component */ "./src/app/register/register.component.ts");
+/* harmony import */ var _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./dashboard/dashboard.component */ "./src/app/dashboard/dashboard.component.ts");
 
 
  //Template drivern form
@@ -164,53 +156,40 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
-
-
-
-
 class AppModule {
 }
-AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]] });
-AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function AppModule_Factory(t) { return new (t || AppModule)(); }, providers: [_bus_ticket_booking_register_service__WEBPACK_IMPORTED_MODULE_8__["RegisterService"]], imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_9__["HttpClientModule"], jw_angular_pagination__WEBPACK_IMPORTED_MODULE_10__["JwPaginationModule"],
-            _material_module_material_module_module__WEBPACK_IMPORTED_MODULE_12__["MaterialModuleModule"], _service_crud_service__WEBPACK_IMPORTED_MODULE_20__["CrudService"],
-            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_11__["BrowserAnimationsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"],
-            _angular_fire__WEBPACK_IMPORTED_MODULE_16__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_18__["environment"].firebase),
-            _angular_fire_database__WEBPACK_IMPORTED_MODULE_17__["AngularFireDatabaseModule"], _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_19__["AngularFirestoreModule"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot([])
+AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]] });
+AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function AppModule_Factory(t) { return new (t || AppModule)(); }, providers: [_bus_ticket_booking_register_service__WEBPACK_IMPORTED_MODULE_7__["RegisterService"]], imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_8__["HttpClientModule"], jw_angular_pagination__WEBPACK_IMPORTED_MODULE_9__["JwPaginationModule"],
+            _material_module_material_module_module__WEBPACK_IMPORTED_MODULE_11__["MaterialModuleModule"],
+            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_10__["BrowserAnimationsModule"]
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
-        _header_header_component__WEBPACK_IMPORTED_MODULE_5__["HeaderComponent"],
-        _footer_footer_component__WEBPACK_IMPORTED_MODULE_6__["FooterComponent"],
-        _bus_ticket_booking_bus_ticket_booking_component__WEBPACK_IMPORTED_MODULE_7__["BusTicketBookingComponent"],
-        _login_login_component__WEBPACK_IMPORTED_MODULE_13__["LoginComponent"],
-        _register_register_component__WEBPACK_IMPORTED_MODULE_14__["RegisterComponent"],
-        _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_15__["DashboardComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_9__["HttpClientModule"], jw_angular_pagination__WEBPACK_IMPORTED_MODULE_10__["JwPaginationModule"],
-        _material_module_material_module_module__WEBPACK_IMPORTED_MODULE_12__["MaterialModuleModule"], _service_crud_service__WEBPACK_IMPORTED_MODULE_20__["CrudService"],
-        _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_11__["BrowserAnimationsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"], _angular_fire__WEBPACK_IMPORTED_MODULE_16__["AngularFireModule"], _angular_fire_database__WEBPACK_IMPORTED_MODULE_17__["AngularFireDatabaseModule"], _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_19__["AngularFirestoreModule"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]] }); })();
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
+        _header_header_component__WEBPACK_IMPORTED_MODULE_4__["HeaderComponent"],
+        _footer_footer_component__WEBPACK_IMPORTED_MODULE_5__["FooterComponent"],
+        _bus_ticket_booking_bus_ticket_booking_component__WEBPACK_IMPORTED_MODULE_6__["BusTicketBookingComponent"],
+        _login_login_component__WEBPACK_IMPORTED_MODULE_12__["LoginComponent"],
+        _register_register_component__WEBPACK_IMPORTED_MODULE_13__["RegisterComponent"],
+        _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["DashboardComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_8__["HttpClientModule"], jw_angular_pagination__WEBPACK_IMPORTED_MODULE_9__["JwPaginationModule"],
+        _material_module_material_module_module__WEBPACK_IMPORTED_MODULE_11__["MaterialModuleModule"],
+        _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_10__["BrowserAnimationsModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
                 declarations: [
-                    _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
-                    _header_header_component__WEBPACK_IMPORTED_MODULE_5__["HeaderComponent"],
-                    _footer_footer_component__WEBPACK_IMPORTED_MODULE_6__["FooterComponent"],
-                    _bus_ticket_booking_bus_ticket_booking_component__WEBPACK_IMPORTED_MODULE_7__["BusTicketBookingComponent"],
-                    _login_login_component__WEBPACK_IMPORTED_MODULE_13__["LoginComponent"],
-                    _register_register_component__WEBPACK_IMPORTED_MODULE_14__["RegisterComponent"],
-                    _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_15__["DashboardComponent"],
+                    _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
+                    _header_header_component__WEBPACK_IMPORTED_MODULE_4__["HeaderComponent"],
+                    _footer_footer_component__WEBPACK_IMPORTED_MODULE_5__["FooterComponent"],
+                    _bus_ticket_booking_bus_ticket_booking_component__WEBPACK_IMPORTED_MODULE_6__["BusTicketBookingComponent"],
+                    _login_login_component__WEBPACK_IMPORTED_MODULE_12__["LoginComponent"],
+                    _register_register_component__WEBPACK_IMPORTED_MODULE_13__["RegisterComponent"],
+                    _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_14__["DashboardComponent"],
                 ],
-                imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_9__["HttpClientModule"], jw_angular_pagination__WEBPACK_IMPORTED_MODULE_10__["JwPaginationModule"],
-                    _material_module_material_module_module__WEBPACK_IMPORTED_MODULE_12__["MaterialModuleModule"], _service_crud_service__WEBPACK_IMPORTED_MODULE_20__["CrudService"],
-                    _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_11__["BrowserAnimationsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"],
-                    _angular_fire__WEBPACK_IMPORTED_MODULE_16__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_18__["environment"].firebase),
-                    _angular_fire_database__WEBPACK_IMPORTED_MODULE_17__["AngularFireDatabaseModule"], _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_19__["AngularFirestoreModule"],
-                    _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot([])
+                imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_8__["HttpClientModule"], jw_angular_pagination__WEBPACK_IMPORTED_MODULE_9__["JwPaginationModule"],
+                    _material_module_material_module_module__WEBPACK_IMPORTED_MODULE_11__["MaterialModuleModule"],
+                    _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_10__["BrowserAnimationsModule"]
                 ],
-                providers: [_bus_ticket_booking_register_service__WEBPACK_IMPORTED_MODULE_8__["RegisterService"]],
-                bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]],
+                providers: [_bus_ticket_booking_register_service__WEBPACK_IMPORTED_MODULE_7__["RegisterService"]],
+                bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]],
             }]
     }], null, null); })();
 
@@ -232,10 +211,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_app_AppData__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/AppData */ "./src/app/AppData.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
 /* harmony import */ var _register_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./register.service */ "./src/app/bus-ticket-booking/register.service.ts");
-/* harmony import */ var _service_crud_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../service/crud.service */ "./src/app/service/crud.service.ts");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+/* harmony import */ var jw_angular_pagination__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! jw-angular-pagination */ "./node_modules/jw-angular-pagination/__ivy_ngcc__/fesm2015/jw-angular-pagination.js");
 /* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/button.js");
-/* harmony import */ var jw_angular_pagination__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! jw-angular-pagination */ "./node_modules/jw-angular-pagination/__ivy_ngcc__/fesm2015/jw-angular-pagination.js");
 
  // Template drivern form
 
@@ -246,18 +224,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
 function BusTicketBookingComponent_option_21_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "option", 29);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "option", 28);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const clist_r9 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate2"]("value", "", clist_r9.id, "-", clist_r9.value, "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("value", clist_r9.id);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"](" ", clist_r9.id, "-", clist_r9.value, " ");
 } }
-function BusTicketBookingComponent_div_34_Template(rf, ctx) { if (rf & 1) {
+function BusTicketBookingComponent_div_32_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -267,15 +244,15 @@ function BusTicketBookingComponent_div_34_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"](" ", item_r10.name, " for ", item_r10.product, " ");
 } }
 const _c0 = function (a0, a1) { return { even: a0, odd: a1 }; };
-function BusTicketBookingComponent_tr_54_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "tr", 30);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "td", 31);
+function BusTicketBookingComponent_tr_52_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "tr", 29);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "td", 30);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "td", 31);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "td", 30);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "td", 31);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "td", 30);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "td");
@@ -314,7 +291,7 @@ function BusTicketBookingComponent_tr_54_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](13, 10, reg_r11.TIMESTAMP2, "dd/MM/yyyy hh:mm:ss"));
 } }
-function BusTicketBookingComponent_div_59_Template(rf, ctx) { if (rf & 1) {
+function BusTicketBookingComponent_div_57_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
@@ -325,23 +302,22 @@ function BusTicketBookingComponent_div_59_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("This is if content ", ctx_r4.conditionFlag, "");
 } }
-function BusTicketBookingComponent_ng_template_60_Template(rf, ctx) { if (rf & 1) {
+function BusTicketBookingComponent_ng_template_58_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h1");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "this is else block");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } }
-function BusTicketBookingComponent_ng_template_62_Template(rf, ctx) { if (rf & 1) {
+function BusTicketBookingComponent_ng_template_60_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h1");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "then block");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } }
 class BusTicketBookingComponent {
-    constructor(router, _fromBuilder, rvsc, _CrudService) {
+    constructor(router, _fromBuilder, rvsc) {
         this.router = router;
         this._fromBuilder = _fromBuilder;
         this.rvsc = rvsc;
-        this._CrudService = _CrudService;
-        this.data = new src_app_AppData__WEBPACK_IMPORTED_MODULE_2__["Appdata"]('', '', '', '');
+        this.data = new src_app_AppData__WEBPACK_IMPORTED_MODULE_2__["Appdata"]('', '', '');
         this.title = 'myproject';
         this.designation = [
             { id: '1', value: 'Admin' },
@@ -358,7 +334,6 @@ class BusTicketBookingComponent {
     }
     onOptionsSelected(value) {
         console.log('the selected value is ' + value);
-        this.ddldesginationobj = value;
     }
     ngOnInit() {
         this.registerForm = this._fromBuilder.group({
@@ -392,7 +367,7 @@ class BusTicketBookingComponent {
         else {
             this.registerForm.controls['txtName'].reset();
             this.registerForm.controls['ddlDesignation'].reset();
-            // this.registerForm.controls['ddlDesignation'].value('-1');
+            this.registerForm.controls['ddlDesignation'].value('-1');
             // this.registerForm.controls['ddlDesignation'].setValue = {id:-1,value:'Select One'};
             this.registerForm.controls['txtAge'].reset();
         }
@@ -408,29 +383,12 @@ class BusTicketBookingComponent {
         return item.id;
     }
     obtogglebutton() {
-        debugger;
         this.conditionFlag = !this.conditionFlag;
-        this.router.navigate(['../register']);
-    }
-    CreateRecord() {
-        alert('submit');
-        let recordObj = {};
-        recordObj['name'] = this.data.username2;
-        recordObj['Age'] = this.data.Age2;
-        recordObj['Mailid'] = this.data.EmailId2;
-        recordObj['Designation'] = this.ddldesginationobj;
-        this._CrudService
-            .create_NewEmployee(recordObj)
-            .then((result) => {
-            console.log(result);
-        })
-            .catch((err) => {
-            console.log(err);
-        });
+        this.router.navigate(['/Register']);
     }
 }
-BusTicketBookingComponent.ɵfac = function BusTicketBookingComponent_Factory(t) { return new (t || BusTicketBookingComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_register_service__WEBPACK_IMPORTED_MODULE_4__["RegisterService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_service_crud_service__WEBPACK_IMPORTED_MODULE_5__["CrudService"])); };
-BusTicketBookingComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: BusTicketBookingComponent, selectors: [["app-bus-ticket-booking"]], decls: 64, vars: 19, consts: [[1, "form-group", 3, "formGroup", "ngSubmit"], ["formDirective", "ngForm"], [1, "form-group"], ["for", "name"], ["type", "text", "required", "", "formControlName", "txtName", "id", "txtname", "required", "", "name", "txtname", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "alterEgo"], ["type", "text", "formControlName", "txtAge", "id", "txtage", "required", "", "name", "txtage", 1, "form-control", 3, "ngModel", "ngModelChange"], ["type", "text", "formControlName", "txtEmail", "id", "txtEmail", "required", "", "name", "txtEmail", 1, "form-control", 3, "ngModel", "ngModelChange"], ["formControlName", "ddlDesignation", 1, "form-control", 3, "change"], ["value", "-1"], [3, "value", 4, "ngFor", "ngForOf"], ["for", "power"], ["id", "button", "name", "button", "mat-raised-button", "", "mat-button-base", "", "mat-primary", "", "color", "primary", 1, "btn", "btn-default", "mat-primary", 3, "disabled", "click"], ["id", "btnreset", "name", "button", 1, "btn", "btn-success", 3, "click"], ["id", "btnrecord", "name", "button", 1, "btn", "mat-button-base", 3, "click"], [1, "card", "text-center", "m-3"], [1, "card-header"], [1, "card-body"], [4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "card-footer", "pb-0", "pt-3"], [3, "items", "changePage"], [1, "table", "table-responsive", "text-nowrap"], ["scope", "row"], ["ng-class-even", "'striped'", "ng-class", "{\n            blueFont: true,\n            redBg: reg.AUDIT_VERSION == 1,\n            greenBg: reg.id > 4444\n          }", 3, "ngClass", 4, "ngFor", "ngForOf", "ngForTrackBy"], [3, "items", "pageSize", "maxPages", "initialPage", "changePage"], ["material-icons", "", "mat-focus-indicator", "", "mat-raised-button", "", "mat-button-base", "", "mat-primary", "", "color", "primary", 3, "click"], [4, "ngIf", "ngIfThen", "ngIfElse"], ["elseblock", ""], ["thenblock", ""], [3, "value"], ["ng-class-even", "'striped'", "ng-class", "{\n            blueFont: true,\n            redBg: reg.AUDIT_VERSION == 1,\n            greenBg: reg.id > 4444\n          }", 3, "ngClass"], [3, "ngClass"]], template: function BusTicketBookingComponent_Template(rf, ctx) { if (rf & 1) {
+BusTicketBookingComponent.ɵfac = function BusTicketBookingComponent_Factory(t) { return new (t || BusTicketBookingComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_register_service__WEBPACK_IMPORTED_MODULE_4__["RegisterService"])); };
+BusTicketBookingComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: BusTicketBookingComponent, selectors: [["app-bus-ticket-booking"]], decls: 62, vars: 18, consts: [[1, "form-group", 3, "formGroup", "ngSubmit"], ["formDirective", "ngForm"], [1, "form-group"], ["for", "name"], ["type", "text", "formControlName", "txtName", "id", "txtname", "required", "", "name", "txtname", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "alterEgo"], ["type", "text", "formControlName", "txtAge", "id", "txtage", "required", "", "name", "txtage", 1, "form-control", 3, "ngModel", "ngModelChange"], ["type", "text", "formControlName", "txtEmail", "id", "txtEmail", "required", "", "name", "txtEmail", 1, "form-control", 3, "ngModel", "ngModelChange"], ["formControlName", "ddlDesignation", 1, "form-control", 3, "change"], ["value", "-1"], [3, "value", 4, "ngFor", "ngForOf"], ["for", "power"], ["id", "button", "name", "button", 1, "btn", "btn-default", 3, "click"], ["id", "btnreset", "name", "button", 1, "btn", "btn-success", 3, "click"], [1, "card", "text-center", "m-3"], [1, "card-header"], [1, "card-body"], [4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "card-footer", "pb-0", "pt-3"], [3, "items", "changePage"], [1, "table", "table-responsive", "text-nowrap"], ["scope", "row"], ["ng-class-even", "'striped'", "ng-class", "{blueFont:true, redBg: reg.AUDIT_VERSION==1, greenBg: reg.id>4444}", 3, "ngClass", 4, "ngFor", "ngForOf", "ngForTrackBy"], [3, "items", "pageSize", "maxPages", "initialPage", "changePage"], ["material-icons", "", "mat-focus-indicator", "", "mat-raised-button", "", "mat-button-base", "", "mat-primary", "", "color", "primary", 3, "click"], [4, "ngIf", "ngIfThen", "ngIfElse"], ["elseblock", ""], ["thenblock", ""], [3, "value"], ["ng-class-even", "'striped'", "ng-class", "{blueFont:true, redBg: reg.AUDIT_VERSION==1, greenBg: reg.id>4444}", 3, "ngClass"], [3, "ngClass"]], template: function BusTicketBookingComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "form", 0, 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngSubmit", function BusTicketBookingComponent_Template_form_ngSubmit_0_listener() { return ctx.validateuser(""); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div");
@@ -463,11 +421,11 @@ BusTicketBookingComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "Designation");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "select", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("change", function BusTicketBookingComponent_Template_select_change_18_listener($event) { return ctx.onOptionsSelected($event.target.value + $event.target.id); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("change", function BusTicketBookingComponent_Template_select_change_18_listener($event) { return ctx.onOptionsSelected($event.target.value); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "option", 9);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "--Select Designation--");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](21, BusTicketBookingComponent_option_21_Template, 2, 4, "option", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](21, BusTicketBookingComponent_option_21_Template, 2, 3, "option", 10);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "div", 2);
@@ -480,70 +438,66 @@ BusTicketBookingComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BusTicketBookingComponent_Template_button_click_26_listener() { return ctx.validateuser("Reset"); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, " Reset ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "button", 14);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BusTicketBookingComponent_Template_button_click_28_listener() { return ctx.CreateRecord(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, " Create Record ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "div", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "h3", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, "Angular 8 Custom Pagination Example");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "div", 16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](32, BusTicketBookingComponent_div_32_Template, 2, 2, "div", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "div", 18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "jw-pagination", 19);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("changePage", function BusTicketBookingComponent_Template_jw_pagination_changePage_34_listener($event) { return ctx.beginPagination($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "div", 15);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "h3", 16);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "Angular 8 Custom Pagination Example");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "table", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "thead");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "th", 21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](40, "Index");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "div", 17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](34, BusTicketBookingComponent_div_34_Template, 2, 2, "div", 18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "th", 21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42, "AUDIT_VERSION");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "div", 19);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "jw-pagination", 20);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("changePage", function BusTicketBookingComponent_Template_jw_pagination_changePage_36_listener($event) { return ctx.beginPagination($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "th", 21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](44, "GROUPID");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](45, "th", 21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](46, "GROUPNAME");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](47, "th", 21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](48, "PRODUCT_FAMILY");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "div");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "table", 21);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "thead");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "th", 22);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42, "Index");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "th", 22);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](44, "AUDIT_VERSION");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](45, "th", 22);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](46, "GROUPID");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](47, "th", 22);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](48, "GROUPNAME");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](49, "th", 22);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](50, "PRODUCT_FAMILY");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](51, "th", 22);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](52, "TIMESTAMP2");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](49, "th", 21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](50, "TIMESTAMP2");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](53, "tbody");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](54, BusTicketBookingComponent_tr_54_Template, 14, 25, "tr", 23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](51, "tbody");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](52, BusTicketBookingComponent_tr_52_Template, 14, 25, "tr", 22);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](55, "div", 19);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](56, "jw-pagination", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("changePage", function BusTicketBookingComponent_Template_jw_pagination_changePage_56_listener($event) { return ctx.beginGroupIdPagination($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](53, "div", 18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](54, "jw-pagination", 23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("changePage", function BusTicketBookingComponent_Template_jw_pagination_changePage_54_listener($event) { return ctx.beginGroupIdPagination($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](57, "button", 25);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BusTicketBookingComponent_Template_button_click_57_listener() { return ctx.obtogglebutton(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](58);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](55, "button", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function BusTicketBookingComponent_Template_button_click_55_listener() { return ctx.obtogglebutton(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](56);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](59, BusTicketBookingComponent_div_59_Template, 3, 1, "div", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](57, BusTicketBookingComponent_div_57_Template, 3, 1, "div", 25);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](58, BusTicketBookingComponent_ng_template_58_Template, 2, 0, "ng-template", null, 26, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](60, BusTicketBookingComponent_ng_template_60_Template, 2, 0, "ng-template", null, 27, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](62, BusTicketBookingComponent_ng_template_62_Template, 2, 0, "ng-template", null, 28, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](61);
-        const _r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](63);
+        const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](59);
+        const _r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](61);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("formGroup", ctx.registerForm);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.data.username2);
@@ -553,9 +507,7 @@ BusTicketBookingComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.data.EmailId2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.designation);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", ctx.data.username2.length <= 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](11);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.pagedItems)("ngForTrackBy", ctx.trackbyFunction);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("items", ctx.dataObj);
@@ -567,7 +519,7 @@ BusTicketBookingComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Hello button ", ctx.conditionFlag, " ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.conditionFlag)("ngIfThen", _r7)("ngIfElse", _r5);
-    } }, directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroupDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["RequiredValidator"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControlName"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["SelectControlValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgSelectOption"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵangular_packages_forms_forms_x"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgForOf"], _angular_material_button__WEBPACK_IMPORTED_MODULE_7__["MatButton"], jw_angular_pagination__WEBPACK_IMPORTED_MODULE_8__["JwPaginationComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgClass"]], pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_6__["DatePipe"]], styles: ["@import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');\r\n li.odd[_ngcontent-%COMP%]{\r\n   background-color: aquamarine;\r\n\r\n }\r\n li.even[_ngcontent-%COMP%]{\r\n   background-color:lightblue;\r\n }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYnVzLXRpY2tldC1ib29raW5nL2J1cy10aWNrZXQtYm9va2luZy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDJFQUEyRTtDQUMxRTtHQUNFLDRCQUE0Qjs7Q0FFOUI7Q0FDQTtHQUNFLDBCQUEwQjtDQUM1QiIsImZpbGUiOiJzcmMvYXBwL2J1cy10aWNrZXQtYm9va2luZy9idXMtdGlja2V0LWJvb2tpbmcuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgdXJsKCdodHRwczovL3VucGtnLmNvbS9ib290c3RyYXBAMy4zLjcvZGlzdC9jc3MvYm9vdHN0cmFwLm1pbi5jc3MnKTtcclxuIGxpLm9kZHtcclxuICAgYmFja2dyb3VuZC1jb2xvcjogYXF1YW1hcmluZTtcclxuXHJcbiB9XHJcbiBsaS5ldmVue1xyXG4gICBiYWNrZ3JvdW5kLWNvbG9yOmxpZ2h0Ymx1ZTtcclxuIH1cclxuIl19 */"] });
+    } }, directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroupDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControlName"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["RequiredValidator"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["SelectControlValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgSelectOption"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵangular_packages_forms_forms_x"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgForOf"], jw_angular_pagination__WEBPACK_IMPORTED_MODULE_6__["JwPaginationComponent"], _angular_material_button__WEBPACK_IMPORTED_MODULE_7__["MatButton"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgClass"]], pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_5__["DatePipe"]], styles: ["@import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');\r\n li.odd[_ngcontent-%COMP%]{\r\n   background-color: aquamarine;\r\n\r\n }\r\n li.even[_ngcontent-%COMP%]{\r\n   background-color:lightblue;\r\n }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYnVzLXRpY2tldC1ib29raW5nL2J1cy10aWNrZXQtYm9va2luZy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDJFQUEyRTtDQUMxRTtHQUNFLDRCQUE0Qjs7Q0FFOUI7Q0FDQTtHQUNFLDBCQUEwQjtDQUM1QiIsImZpbGUiOiJzcmMvYXBwL2J1cy10aWNrZXQtYm9va2luZy9idXMtdGlja2V0LWJvb2tpbmcuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgdXJsKCdodHRwczovL3VucGtnLmNvbS9ib290c3RyYXBAMy4zLjcvZGlzdC9jc3MvYm9vdHN0cmFwLm1pbi5jc3MnKTtcclxuIGxpLm9kZHtcclxuICAgYmFja2dyb3VuZC1jb2xvcjogYXF1YW1hcmluZTtcclxuXHJcbiB9XHJcbiBsaS5ldmVue1xyXG4gICBiYWNrZ3JvdW5kLWNvbG9yOmxpZ2h0Ymx1ZTtcclxuIH1cclxuIl19 */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BusTicketBookingComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -575,7 +527,7 @@ BusTicketBookingComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ
                 templateUrl: './bus-ticket-booking.component.html',
                 styleUrls: ['./bus-ticket-booking.component.css'],
             }]
-    }], function () { return [{ type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] }, { type: _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"] }, { type: _register_service__WEBPACK_IMPORTED_MODULE_4__["RegisterService"] }, { type: _service_crud_service__WEBPACK_IMPORTED_MODULE_5__["CrudService"] }]; }, null); })();
+    }], function () { return [{ type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] }, { type: _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"] }, { type: _register_service__WEBPACK_IMPORTED_MODULE_4__["RegisterService"] }]; }, null); })();
 
 
 /***/ }),
@@ -1082,56 +1034,6 @@ RegisterComponent.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefin
 
 /***/ }),
 
-/***/ "./src/app/service/crud.service.ts":
-/*!*****************************************!*\
-  !*** ./src/app/service/crud.service.ts ***!
-  \*****************************************/
-/*! exports provided: CrudService */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CrudService", function() { return CrudService; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/fire/firestore */ "./node_modules/@angular/fire/__ivy_ngcc__/fesm2015/angular-fire-firestore.js");
-
-
-
-
-class CrudService {
-    constructor(fireservice) {
-        this.fireservice = fireservice;
-    }
-    create_NewEmployee(recordObj) {
-        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
-            return yield this.fireservice.collection('Employee').add(recordObj).then((result) => {
-                console.log(result.path);
-            }).catch((err) => {
-                console.log(err);
-            });
-            ;
-        });
-    }
-}
-CrudService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: CrudService, factory: CrudService.ɵfac, providedIn: 'root' });
-CrudService.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: CrudService });
-CrudService.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function CrudService_Factory(t) { return new (t || CrudService)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_fire_firestore__WEBPACK_IMPORTED_MODULE_2__["AngularFirestore"])); }, imports: [[]] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](CrudService, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"],
-        args: [{
-                providedIn: 'root',
-            }]
-    }, {
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
-        args: [{
-                imports: [],
-            }]
-    }], function () { return [{ type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_2__["AngularFirestore"] }]; }, null); })();
-
-
-/***/ }),
-
 /***/ "./src/environments/environment.ts":
 /*!*****************************************!*\
   !*** ./src/environments/environment.ts ***!
@@ -1146,17 +1048,7 @@ __webpack_require__.r(__webpack_exports__);
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 const environment = {
-    production: false,
-    firebase: {
-        apiKey: "AIzaSyAv_-7-ZBr4Apr05704VnvzxbzNmkpU3t0",
-        authDomain: "ehospital-8ca59.firebaseapp.com",
-        databaseURL: "https://ehospital-8ca59.firebaseio.com",
-        projectId: "ehospital-8ca59",
-        storageBucket: "ehospital-8ca59.appspot.com",
-        messagingSenderId: "767797709492",
-        appId: "1:767797709492:web:2f23db2c652e51186ba5e1",
-        measurementId: "G-TVB9SDWNSL"
-    }
+    production: false
 };
 /*
  * For easier debugging in development mode, you can import the following file
